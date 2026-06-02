@@ -14,8 +14,8 @@ BRIGHT_RED='\033[1;31m'
 BRIGHT_GREEN='\033[1;32m'
 BRIGHT_BLUE='\033[1;34m'
 BRIGHT_CYAN='\033[1;36m'
-
-echo -e "${BRIGHT_RED}"
+KERNELFETCHDIR=~/.config/kernelfetch
+mkdir -p "${KERNELFETCHDIR}"
 cat << 'EOF'
 ⠀⠀⠀ ⠀⠀ ⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⣀⡠⠔⠒⠒⠒⠒⠐⠢⠄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡶⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠢⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -48,6 +48,7 @@ KRNL=$(uname -r)
 SELINUX=$(getenforce 2>/dev/null || echo "Unknown.")
 OS=$(uname -o)
 GITHUB="https://github.com/rebangkkuser/kernelfetch"
+KFV="1.0
 echo -e "${BRIGHT_BLUE}$(whoami)@$(hostname)${RESET}"
 echo "-------"
 echo -e "${BRIGHT_RED}Kernel${RESET}: ${KRNL}"
@@ -56,4 +57,5 @@ echo -e "${BRIGHT_RED}Operating system${RESET}: ${OS}"
 echo -e "${BRIGHT_RED}Current kernelfetch file${RESET}: ${0}"
 echo -e "${BRIGHT_RED}Current kernelfetch PID${RESET}: $$"
 echo -e "${BRIGHT_RED}Our GitHub${RESET}: ${GITHUB}"
+echo -e "${BRIGHT_RED}kernelfetch version${RESET}: ${KFV}"
 echo "-------"
