@@ -48,7 +48,7 @@ KRNL=$(uname -r)
 SELINUX=$(getenforce 2>/dev/null || echo "Unknown.")
 OS=$(uname -o)
 GITHUB="https://github.com/rebangkkuser/kernelfetch"
-KFV="1.0
+KFV="1.0"
 echo -e "${BRIGHT_BLUE}$(whoami)@$(hostname)${RESET}"
 echo "-------"
 echo -e "${BRIGHT_RED}Kernel${RESET}: ${KRNL}"
