@@ -16,6 +16,7 @@ BRIGHT_BLUE='\033[1;34m'
 BRIGHT_CYAN='\033[1;36m'
 KERNELFETCHDIR=~/.config/kernelfetch
 mkdir -p "${KERNELFETCHDIR}"
+echo -e "$BRIGHT_RED"
 cat << 'EOF'
 ⠀⠀⠀ ⠀⠀ ⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⣀⡠⠔⠒⠒⠒⠒⠐⠢⠄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡶⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠢⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
